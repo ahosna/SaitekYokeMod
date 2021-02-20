@@ -32,11 +32,11 @@ Rotary encoder is modified to click + and - buttons with totary encoder button b
 I was thinking of using Xplane interface directly but then I decided to go with more universal joystick support. This allows me to map this in both xplane and msfs.
 
 # Pictures
-!(Switches arrived)[01-switches.jpg]
-!(Placing switches into the case)[02-switches-placed.jpg]
-!(Proto board - 0 components)[03-proto-board.jpg]
-!(Look inside)[04-in-the-case.jpg]
-!(Rotary encoder for magnetos)[05-rotary-encoder.jpg]
-!(Making hole for master switches)[06-master-hole.jpg]
-!(Master and avionics)[07-master-btns.jpg]
-!(Finished mod)[08-finished-yoke-mod.jpg]
+![Switches arrived)[01-switches.jpg)
+![Placing switches into the case)[02-switches-placed.jpg)
+![Proto board - 0 components)[03-proto-board.jpg)
+![Look inside)[04-in-the-case.jpg)
+![Rotary encoder for magnetos)[05-rotary-encoder.jpg)
+![Making hole for master switches)[06-master-hole.jpg)
+![Master and avionics)[07-master-btns.jpg)
+![Finished mod)[08-finished-yoke-mod.jpg)
