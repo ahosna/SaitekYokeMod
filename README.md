@@ -33,7 +33,7 @@ I was thinking of using Xplane interface directly but then I decided to go with 
 
 # Configuration
 ## XPlane
-[The control profiles](control profiles) directory contains joystick mappings for vFlyteAir Cessna 150 and Piper Arrow III. This can be found in Xplane11/Output/preferences directory in your Xplane installation.
+[The control profiles directory](control%20profiles) contains joystick mappings for vFlyteAir Cessna 150 and Piper Arrow III. This can be found in `Xplane11/Output/preferences/control profiles` directory in your Xplane installation.
 # Pictures
 ![Switches arrived](01-switches.jpg)
 ![Placing switches into the case](02-switches-placed.jpg)
