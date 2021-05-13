@@ -11,7 +11,10 @@ char keys[ROWS][COLS] = {
   {5, 6, 7, 8, 64}, // last one not connected
   {9, 10, 11, 12, 13},
 };
-const int BTN_DELAY = 100;
+const int SWITCH_DELAY = 500;
+const int SWITCH_DEBOUNCE = 125;
+const int ROTARY_DELAY = 100;
+
 // 26 joystick buttons from matrix
 const int JOY_IGN_DOWN = 26;
 const int JOY_IGN_UP = 27;
@@ -53,6 +56,7 @@ int matrix_to_joy(char c, bool on) {
 
 void setup(){
   Serial.begin(115200);
+  keypad.setDebounceTime(SWITCH_DEBOUNCE);
   keypad.addEventListener(keypadEvent);
   encoder.setPosition(0);
   Joystick.begin();
@@ -66,7 +70,7 @@ void keypadEvent(KeypadEvent key){
     Serial.println(keypad.key[active_idx].kchar, HEX);
     int joy_id = matrix_to_joy(key, true);
     Joystick.pressButton(joy_id);
-    delay(BTN_DELAY);
+    delay(SWITCH_DELAY);
     Joystick.releaseButton(joy_id);
   }
   if (state == RELEASED) {
@@ -74,7 +78,7 @@ void keypadEvent(KeypadEvent key){
     Serial.println(keypad.key[active_idx].kchar, HEX);
     int joy_id = matrix_to_joy(key, false);
     Joystick.pressButton(joy_id);
-    delay(BTN_DELAY);
+    delay(SWITCH_DELAY);
     Joystick.releaseButton(joy_id);
   }
 }
@@ -92,7 +96,7 @@ int change_ign(int diff) {
     ign += diff;
     Serial.println("+");
     Joystick.pressButton(JOY_IGN_UP);
-    delay(100);
+    delay(ROTARY_DELAY);
     Joystick.releaseButton(JOY_IGN_UP);
   }
 }

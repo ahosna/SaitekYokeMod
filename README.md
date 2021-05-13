@@ -31,6 +31,13 @@ Rotary encoder is modified to click + and - buttons with totary encoder button b
 
 I was thinking of using Xplane interface directly but then I decided to go with more universal joystick support. This allows me to map this in both xplane and msfs.
 
+# Firmware install
+- Restart win - especially if you were using the joystick
+- Run Arduino IDE
+  - select Arduino Leonardo port and board
+  - compile and upload
+- Run GameControllers app to test
+
 # Configuration
 ## XPlane
 [The control profiles directory](control%20profiles) contains joystick mappings for vFlyteAir Cessna 150 and Piper Arrow III. This can be found in `Xplane11/Output/preferences/control profiles` directory in your Xplane installation.
